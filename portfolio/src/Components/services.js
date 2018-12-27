@@ -8,4 +8,4 @@ class services extends Component {
   }
 }
 
-export default services;
+export default Services;
