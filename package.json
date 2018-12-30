@@ -1,45 +1,27 @@
 {
-    "title": "Stylish Portfolio",
-    "name": "startbootstrap-stylish-portfolio",
-    "version": "5.0.1",
-    "description": "A stylish portfolio HTML template built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/stylish-portfolio",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio.git"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "5.3.1",
-        "bootstrap": "4.1.3",
-        "jquery": "3.3.1",
-        "jquery.easing": "^1.4.1",
-        "simple-line-icons": "^2.4.1"
-    },
-    "devDependencies": {
-        "browser-sync": "2.24.7",
-        "gulp": "^3.9.1",
-        "gulp-autoprefixer": "6.0.0",
-        "gulp-clean-css": "3.10.0",
-        "gulp-header": "2.0.5",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.1",
-        "gulp-uglify": "3.0.1"
-    }
+  "name": "react-stylish-portfolio",
+  "version": "1.0.0",
+  "description": "Stylish Portfolio is a one page Bootstrap portfolio theme with off canvas navigation and smooth scrolling through content sections.",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "bootstrap": "4.1.3",
+    "node-sass-chokidar": "^1.3.3",
+    "npm-run-all": "^4.1.3",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4",
+    "react-scrollable-anchor": "0.6.1",
+    "reactstrap": "6.3.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
