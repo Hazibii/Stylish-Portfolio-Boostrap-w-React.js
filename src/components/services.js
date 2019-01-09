@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component} from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
+
 const ServicesOffered = [
   {
     title: "Responsive",
@@ -26,7 +27,7 @@ const ServicesOffered = [
     icon: "icon-mustache"
   }
 ];
-const ServicesSections = () => (
+const Services = () => (
   <ScrollableAnchor id="services">
     <section className="content-section bg-primary text-white text-center">
       <div className="container">
@@ -54,4 +55,4 @@ const ServicesSections = () => (
     </section>
   </ScrollableAnchor>
 );
-export default ServicesSections;
+export default Services;

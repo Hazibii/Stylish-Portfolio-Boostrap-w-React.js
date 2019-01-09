@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component} from "react";
 
-const CalloutSection = () => (
+const Callout = () => (
   <section className="callout">
     <div className="container text-center">
       <h2 className="mx-auto mb-5">
@@ -15,4 +15,4 @@ const CalloutSection = () => (
     </div>
   </section>
 );
-export default CalloutSection;
+export default Callout;

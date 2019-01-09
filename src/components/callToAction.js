@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component} from "react";
 
 const CallToAction = () => (
   <section className="content-section bg-primary text-white">

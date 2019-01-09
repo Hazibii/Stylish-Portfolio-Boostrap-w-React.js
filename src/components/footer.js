@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component} from "react";
 const socialSites = [
   {
     link: "https://twitter.com/cincinnaticodes",
@@ -13,7 +13,7 @@ const socialSites = [
     icon: "icon-social-github"
   }
 ];
-const FooterSection = () => (
+const Footer= () => (
   <footer className="footer text-center">
     <div className="container">
       <ul className="list-inline mb-5">
@@ -31,4 +31,4 @@ const FooterSection = () => (
     </div>
   </footer>
 );
-export default FooterSection;
+export default Footer;

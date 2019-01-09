@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component} from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 
-const MapSection = () => (
+const Map = () => (
   <ScrollableAnchor id="contact">
     <section className="map">
       <iframe
@@ -18,4 +18,4 @@ const MapSection = () => (
     </section>
   </ScrollableAnchor>
 );
-export default MapSection;
+export default Map;

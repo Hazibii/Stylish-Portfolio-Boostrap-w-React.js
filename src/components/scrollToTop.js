@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { Component} from "react";
 class ScrollToTop extends React.Component {
   constructor(props) {
     super(props);

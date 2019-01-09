@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { Component} from "react";
 class Sidebar extends React.Component {
   constructor(props) {
     super(props);

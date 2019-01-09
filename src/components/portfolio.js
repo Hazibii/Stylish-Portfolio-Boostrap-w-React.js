@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component} from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 const portfolioItems = [
   {
@@ -25,7 +25,7 @@ const portfolioItems = [
       "A yellow workspace with some scissors, pencils, and other objects."
   }
 ];
-const PortfolioSection = () => (
+const Portfolio = () => (
   <ScrollableAnchor id="portfolio">
     <section className="content-section">
       <div className="container">
@@ -53,4 +53,4 @@ const PortfolioSection = () => (
   </ScrollableAnchor>
 );
 
-export default PortfolioSection;
+export default Portfolio;

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Component} from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 
-const AboutSection = () => (
-  <ScrollableAnchor id="about">
+class About extends Component{
+  render(){
+    return (
+      <ScrollableAnchor id="about">
     <section className="content-section bg-light">
       <div className="container text-center">
         <div className="row">
@@ -26,6 +28,9 @@ const AboutSection = () => (
       </div>
     </section>
   </ScrollableAnchor>
-);
 
-export default AboutSection;
+    );
+  }
+}
+export default About;
+
